@@ -23,7 +23,21 @@ class MemeGenerator extends Component {
   render() {
     return (
       <div>
-        <p>Memes</p>
+        <form className="meme-form">
+          <input
+            type="text"
+            name="topText"
+            value={this.state.topText}
+            placeholder="Top Text"
+          />
+          <input
+            type="text"
+            name="bottonText"
+            value={this.state.bottonText}
+            placeholder="Bottom Text"
+          />
+          <button>Generate</button>
+        </form>
       </div>
     )
   }
