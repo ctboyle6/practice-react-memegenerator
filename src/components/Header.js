@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>testing</h1>
+      <h1>Welcome to.. a (very original) Meme Generator</h1>
     </header>
   )
 }
