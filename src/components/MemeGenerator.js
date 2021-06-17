@@ -39,13 +39,18 @@ class MemeGenerator extends Component {
           />
           <input
             type="text"
-            name="bottonText"
-            value={this.state.bottonText}
+            name="bottomText"
+            value={this.state.bottomText}
             placeholder="Bottom Text"
             onChange={this.handleChange}
           />
           <button>Generate</button>
         </form>
+        <div className="meme">
+          <img src={this.state.randomImg} alt="random meme"/>
+          <p>{this.state.topText}</p>
+          <p>{this.state.bottomText}</p>
+        </div>
       </div>
     )
   }
